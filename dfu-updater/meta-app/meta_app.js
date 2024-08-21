@@ -257,9 +257,9 @@ var app = new Vue({
   methods: {
     importExamples() {
       var self = this
-      const unique_platforms = [...new Set(data.map(obj => obj.platform))]
+      // const unique_platforms = [...new Set(data.map(obj => obj.platform))]
       self.examples = data
-      self.platforms = unique_platforms
+      // self.platforms = unique_platforms
       // New code below:
       // Get Source list as data
       var self = this // assign self to 'this' before nested function calls...
